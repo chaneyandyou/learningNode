@@ -1,0 +1,10 @@
+include header.pug
+.row
+  each album in albumArr
+    .col-sm-6.col-md-4
+      .thumbnail
+        img(src='/images/wjj.jpg', alt='...')
+        .caption
+          h3=album
+          p
+            a.btn.btn-primary(href=album, role='button') 点击进入

@@ -1,0 +1,6 @@
+include ./header.pug
+.row
+  each photo in photoArr
+    .col-xs-6.col-md-3
+      a.thumbnail(href=photo)
+        img(src=photo, alt='...')  
